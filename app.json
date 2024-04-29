@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      ["expo-updates", {}],
+      [
+        "expo-dynamic-app-icon",
+        {
+          "red": {
+            // icon name
+            "image": "./assets/red.png", // icon path
+            "prerendered": true // for ios UIPrerenderedIcon option
+          },
+          "default": {
+            "image": "./assets/icon.png",
+            "prerendered": true
+          }
+        }
+      ]
+    ]
+  }
+}
